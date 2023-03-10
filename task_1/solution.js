@@ -9,7 +9,6 @@ function addInCartMessage(title, price) {
     message = message + " ";
     message = message + "за";
     message = message + " ";
-    message = productPrice;
     message += productPrice;
     message = message + " ";
     message = message + "теперь в корзине!";
@@ -48,14 +47,9 @@ function addInCartSumChange(sum, delta) {
 
     // Задание №1.3. Увеличение суммы в корзине
 
-    let newSum;
-    newSum = oldSum + difference;
-    let newSumText; 
-    newSumText = newSum + "₽";
-    newSumText = '${newSum} ₽';
-
-    console.log(newSum);
-
+    let newSum = oldSum + difference;
+    let newSumText = newSum + " ₽";
+      
     // Конец решения задания №1.3.
 
     return newSumText;
